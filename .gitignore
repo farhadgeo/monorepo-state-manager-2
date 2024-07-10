@@ -1,8 +1,8 @@
 *node_modules
-packages/*/.env
-packages/*/dist
-packages/*/dist-esm
-packages/*/dist-cjs
+.env
+dist
+dist-esm
+dist-cjs
 *.env
 *.env.test
 *.envrc
@@ -52,3 +52,28 @@ build-storybook.log
 ensure-tailwind-deps.mjs.lock
 vite.config.ts.timestamp-*.mjs
 introspected-schema.graphql
+
+# Nuxt dev/build outputs
+packages/frontend/.output
+packages/frontend/.data
+packages/frontend/.nuxt
+packages/frontend/.nitro
+packages/frontend/.cache
+packages/frontend/dist
+
+# Node dependencies
+packages/frontend/node_modules
+
+# Logs
+packages/frontend/logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
